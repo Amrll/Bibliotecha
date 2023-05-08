@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiblioTecha</title>
+
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="src/styles/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <section class="main">
+      <nav id="navbar">
+        <div class="menu">
+          <div>
+            <form>
+              <div class="input-wrap">
+                <input type="search" size="35" placeholder="Search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="menu-icon">
+              <li>
+                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="notif.html"><i class="fa fa-bell"></i></a>
+              </li>
+              <li>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href="profile.html"><i class="fa fa-user"></i></a>
+              </li>
+            </ul>
+            <ul>
+              <li><a href="#">Fiction</a></li>
+              <li><a href="#">Best Seller</a></li>
+              <li><a href="#">Novel</a></li>
+              <li><a href="#">Collections</a></li>
+              <li><a href="#">New!</a></li>
+              <li><a href="#">Sale</a></li>
+              <li><a href="#">More</a></li>
+            </ul>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <a href="index.html" class="brand">BiblioTecha<span>BOOKS</span></a>
+          <div class="container-inner">
+            <form>
+              <div class="input-wrap">
+                <input type="search" size="45" placeholder="Search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="page-icon">
+              <li>
+                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="notif.html"><i class="fa fa-bell"></i></a>
+              </li>
+              <li>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href="profile.html"><i class="fa fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+          <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+      </nav>
+    </section>
+
+  
+    <!-- Loader -->
+    <div id="preloader">
+      <div id="loader">
+        <div class="book book-1"></div>
+        <div class="book book-2"></div>
+        <div class="book book-3"></div>
+        <div class="book book-3"></div>
+        <div class="book book-3"></div>
+      </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="src/scripts/script.js"></script>
+  </body>
+</html>
