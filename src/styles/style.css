@@ -651,9 +651,7 @@ nav .fa-bars:hover{
 }
 
 /*swiper*/
-.japanese-content{
 
-}
 .japanese-heading{
   line-height: 55px;
   font-size: 1.2rem;
@@ -670,7 +668,7 @@ nav .fa-bars:hover{
   width: 40vh;
   height: 60vh;
   text-align: center;
-  padding: 20px;
+  padding: 25px;
   margin: 15px;
   position: relative;
   flex-grow: 1;
@@ -717,6 +715,7 @@ nav .fa-bars:hover{
 }
 .swiper{
   height: 60vh;
+  width: 100%;
 }
 .swiper-wrapper{
 
@@ -1045,6 +1044,27 @@ nav .fa-bars:hover{
   .summer-text-container a{
     display: none;
   }
+}
+
+@media screen and (max-width:434px){
+  .category-container a{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 480px){
+  .swiper-box{
+    padding: 50px;
+    width: 100%;
+  }
+  .summer-text-container p{
+    font-size: 0.813rem;
+  }
+  .swiper{
+    
+  }
+  
 }
 
 @media screen and (min-width: 900px) {
