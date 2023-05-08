@@ -836,6 +836,7 @@ nav .fa-bars:hover{
   display: flex;
   align-items: center;
   gap: 15px;
+  align-items: flex-start;
 }
 
 .info-box h2 {
@@ -849,7 +850,7 @@ nav .fa-bars:hover{
   font-size: 0.8rem;
   color: var(--gray);
   font-weight: 500;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .info-box img {
@@ -1043,6 +1044,9 @@ nav .fa-bars:hover{
   }
   .summer-text-container a{
     display: none;
+  }
+  .info-box {
+    margin: 0;
   }
 }
 
