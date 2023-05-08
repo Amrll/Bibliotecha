@@ -114,7 +114,7 @@ nav {
 }
 .brand {
   font-size: 1.6em;
-  margin-left: 3.5vw;
+  margin-left: 1vw;
 }
 .brand span{
   font-size: .68em;
@@ -669,7 +669,6 @@ nav .fa-bars:hover{
   height: 60vh;
   text-align: center;
   padding: 25px;
-  margin: 15px;
   position: relative;
   flex-grow: 1;
 }
@@ -919,6 +918,7 @@ nav .fa-bars:hover{
   margin: 0 10px;
   opacity: 0.75;
   font-weight: 300;
+  text-align: center;
 }
 .footer-menu p{
   font-size: .2rem;
@@ -938,6 +938,7 @@ nav .fa-bars:hover{
   margin: 15px 0 10px 0;
   font-size: 1rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .wave {
@@ -1047,6 +1048,9 @@ nav .fa-bars:hover{
   }
   .info-box {
     margin: 0;
+  }
+  .brand {
+    margin-left: 0vw;
   }
 }
 
