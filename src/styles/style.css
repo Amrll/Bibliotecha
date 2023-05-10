@@ -63,7 +63,7 @@ p{
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
-  z-index: 9999;
+  z-index: 9998;
 }
 
 #scrollToTopBtn.show {
@@ -110,6 +110,7 @@ nav {
   z-index: 9;
   transition: 0.7s;
   color: var(--white);
+  z-index: 9999;
 }
 .brand {
   font-size: 1.6em;
@@ -882,6 +883,7 @@ nav .fa-bars:hover{
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  z-index: -9999;
 }
 
 .footer-social-icon,
