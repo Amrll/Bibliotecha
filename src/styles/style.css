@@ -64,7 +64,6 @@ p{
   visibility: hidden;
   transition: opacity 0.3s ease-in-out;
   z-index: 9999;
-  transform: rotate(-180deg);
 }
 
 #scrollToTopBtn.show {
@@ -78,7 +77,7 @@ p{
 }
 
 #scrollToTopBtn:hover i {
-  transform: rotate(+180deg);
+  color: var(--gray);
 }
 
 
@@ -100,6 +99,7 @@ p{
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 1.5em;
 }
 
 nav {
@@ -107,7 +107,6 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 1.5em;
   z-index: 9;
   transition: 0.7s;
   color: var(--white);
@@ -154,7 +153,7 @@ nav a{
   color: var(--white);
 }
 
-nav a:hover{
+.menu a:hover , .container a:hover{
   color: var(--sunset-orange);
 }
 
@@ -162,26 +161,29 @@ nav a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5em 0;
+  padding: 0.5em 1em;
+  border: 1px solid var(--onyx);
+  border-radius: 1em;
 }
 
-form input, form button{
+.search-form input, form button{
   background: none;
   border: none;
   color: var(--white);
 }
 
-form button {
+.search-form button {
   cursor: pointer;
 }
 
-form input::placeholder{
+.search-form input::placeholder{
   color: var(--white);
 }
 
-form input:focus{
+.search-form input:focus{
   outline: none;
 }
+
 
 nav .fa-bars{
   font-size: 1.2em;
@@ -254,9 +256,6 @@ nav .fa-bars:hover{
 .category-container {
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 9vh;
-  height: 3vh;
   background-color: var(--sunset-orange);
 }
 
@@ -277,6 +276,9 @@ nav .fa-bars:hover{
   text-decoration: none;
   font-size: 1em;
   transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .category-container a:hover {
@@ -1052,6 +1054,12 @@ nav .fa-bars:hover{
   .brand {
     margin-left: 0vw;
   }
+  .hide{
+    display: none;
+  }
+  .input-wrap{
+    display: none;
+  }
 }
 
 @media screen and (max-width:434px){
@@ -1295,6 +1303,10 @@ nav .fa-bars:hover{
   box-shadow: 0px 2px 6px -1px var(--raisin-black);
 }
 
+/*for my search engine*/
+.empty-box{
+  display: none;
+}
 
 
 
@@ -1325,7 +1337,7 @@ nav .fa-bars:hover{
   height: 80px;
 }
 
-.book {
+.bookloader {
   position: absolute;
   width: 16px;
   height: 60px;
@@ -1335,17 +1347,17 @@ nav .fa-bars:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.book-1 {
+.bookloader-1 {
   left: 0;
   animation-delay: 0.2s;
 }
 
-.book-2 {
+.bookloader-2 {
   left: 32px;
   animation-delay: 0.4s;
 }
 
-.book-3 {
+.bookloader-3 {
   left: 64px;
   animation-delay: 0.6s;
 }
@@ -1368,22 +1380,22 @@ nav .fa-bars:hover{
     height: 60px;
   }
 
-  .book {
+  .bookloader {
     width: 12px;
     height: 45px;
   }
 
-  .book-1 {
+  .bookloader-1 {
     left: 0;
     animation-delay: 0.15s;
   }
 
-  .book-2 {
+  .bookloader-2 {
     left: 24px;
     animation-delay: 0.3s;
   }
 
-  .book-3 {
+  .bookloader-3 {
     left: 48px;
     animation-delay: 0.45s;
   }
@@ -1395,22 +1407,22 @@ nav .fa-bars:hover{
     height: 70px;
   }
 
-  .book {
+  .bookloader {
     width: 14px;
     height: 52.5px;
   }
 
-  .book-1 {
+  .bookloader-1 {
     left: 0;
     animation-delay: 0.175s;
   }
 
-  .book-2 {
+  .bookloader-2 {
     left: 28px;
     animation-delay: 0.35s;
   }
 
-  .book-3 {
+  .bookloader-3 {
     left: 56px;
     animation-delay: 0.525s;
   }
@@ -1422,22 +1434,22 @@ nav .fa-bars:hover{
     height: 80px;
   }
 
-  .book {
+  .bookloader {
     width: 16px;
     height: 60px;
   }
 
-  .book-1 {
+  .bookloader-1 {
     left: 0;
     animation-delay: 0.2s;
   }
 
-  .book-2 {
+  .bookloader-2 {
     left: 32px;
     animation-delay: 0.4s;
   }
 
-  .book-3 {
+  .bookloader-3 {
     left: 64px;
     animation-delay: 0.6;
   }

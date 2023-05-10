@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BiblioTecha</title>
+
+    <!-- Css stylesheet -->
+    <link rel="stylesheet" href="src/styles/style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!--Swiper-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <button id="scrollToTopBtn" onclick="scrollToTop()">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+    <section class="main">
+      <nav id="navbar">
+        <div class="menu">
+          <div>
+            <form>
+              <div class="input-wrap">
+                <input type="search" size="35" placeholder="Search" />
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </div>
+            </form>
+            <ul class="menu-icon">
+              <li>
+                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="notif.html"><i class="fa fa-bell"></i></a>
+              </li>
+              <li>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href="profile.html"><i class="fa fa-user"></i></a>
+              </li>
+            </ul>
+            <ul class="social-media">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="container">
+          <a href="index.html" class="brand">BiblioTecha<span>BOOKS</span></a>
+          <div class="container-inner">
+            <form class="search-form">
+              <div class="input-wrap">
+                <input id="input" size="45" placeholder="Search" />
+                <a href="#search-tab" onclick="getbooks()"
+                  ><i class="fa fa-search"></i
+                ></a>
+              </div>
+            </form>
+            <ul class="page-icon">
+              <li>
+                <a href="wishlist.html"><i class="fa fa-heart"></i></a>
+              </li>
+              <li>
+                <a href="notif.html"><i class="fa fa-bell"></i></a>
+              </li>
+              <li>
+                <a href="cart.html"><i class="fa fa-shopping-cart"></i></a>
+              </li>
+              <li>
+                <a href="profile.html"><i class="fa fa-user"></i></a>
+              </li>
+            </ul>
+          </div>
+          <i class="fas fa-bars" id="menu-btn"></i>
+        </div>
+        <div class="category-container">
+          <ul>
+            <li><a href="#fiction">Fiction</a></li>
+            <li><a href="#best-seller">Best Seller</a></li>
+            <li><a href="#novel">Novel</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li class="hide"><a href="#new">New!</a></li>
+            <li><a href="#sale">Sale</a></li>
+            <li class="hide"><a href="#more">More</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
+    <section>
+
+
+      
+      <h2 id="book-title"></h2>
+      <p id="book-author"></p>
+      <p id="book-description"></p>
+
+
+
+    </section>
+    <section class="additional-info">
+      <div class="info-container">
+        <div class="info-box">
+          <img
+            src="https://www.fullybookedonline.com/media/wysiwyg/freeship.png"
+          />
+          <div>
+            <h2>FREE SHIPPING</h2>
+            <p>Shop Php 799 and above to get your order delivered for free!</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <img
+            src="https://www.fullybookedonline.com/media/wysiwyg/memberdiscount.png"
+          />
+          <div>
+            <h2>MEMBERSHIP DISCOUNT</h2>
+            <p>Cardholders enjoy additional 5% off on D-Coded items.</p>
+          </div>
+        </div>
+        <div class="info-box">
+          <img
+            src="https://www.fullybookedonline.com/media/wysiwyg/delivery.png"
+          />
+          <div>
+            <h2>CASH ON DELIVERY</h2>
+            <p>
+              Cash on Delivery available for orders worth Php 799 and above.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <h3>Subscribe To Our Newsletter</h3>
+      <div class="contact-input">
+        <input type="email" placeholder="Example@gmail.com" />
+        <a href="#">Subscribe</a>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+      <div class="footer-menu">
+        <h2>ABOUT THIS PROJECT</h2>
+        <p>
+          BiblioTecha: an online bookshop website I designed for passionate
+          readers and literary enthusiasts. With a deep love for books and a
+          desire to create an immersive reading experience.
+        </p>
+      </div>
+      <ul class="footer-social-icon">
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.facebook.com/reyjohn.ebe/"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a
+            class="social-icon__link"
+            href="https://www.instagram.com/amrllo_/"
+          >
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <p>&copy;2023 Rey John Ebe | All Rights Reserved</p>
+    </footer>
+
+    <!-- Loader -->
+    <div id="preloader">
+      <div id="loader">
+        <div class="bookloader bookloader-1"></div>
+        <div class="bookloader bookloader-2"></div>
+        <div class="bookloader bookloader-3"></div>
+        <div class="bookloader bookloader-3"></div>
+        <div class="bookloader book-3"></div>
+      </div>
+    </div>
+
+    <script>
+      function getParameterByName(name, url) {
+        if (!url) url = window.location.href;
+        name = name.replace(/[\[\]]/g, "\\$&");
+        var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+          results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, " "));
+      }
+  
+      function getBookDetails() {
+        const isbn = getParameterByName('isbn');
+        const apiUrl = `https://openlibrary.org/api/books?bibkeys=ISBN:${isbn}&format=json&jscmd=data`;
+  
+        fetch(apiUrl)
+          .then((response) => response.json())
+          .then((data) => {
+            const bookInfo = data[`ISBN:${isbn}`];
+            if (bookInfo) {
+              const title = bookInfo.title;
+              const author = bookInfo.authors ? bookInfo.authors[0].name : 'Unknown';
+              const description = bookInfo.description || 'No description available';
+  
+              document.getElementById('book-title').textContent = title;
+              document.getElementById('book-author').textContent = author;
+              document.getElementById('book-description').textContent = description;
+            }
+          })
+          .catch((error) => {
+            console.error('Error fetching book details:', error);
+          });
+      }
+  
+      document.addEventListener('DOMContentLoaded', function() {
+        getBookDetails();
+      });
+    </script>
+    
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Javascript -->
+    <script src="src/scripts/script.js"></script>
+  </body>
+</html>
