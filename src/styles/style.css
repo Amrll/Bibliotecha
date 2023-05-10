@@ -167,7 +167,7 @@ nav a{
   border-radius: 1em;
 }
 
-.search-form input, form button{
+.search-form input, .search-form button{
   background: none;
   border: none;
   color: var(--white);
@@ -1214,6 +1214,7 @@ nav .fa-bars:hover{
   box-sizing: border-box;
   transition: all 0.3s linear;
   color: var(--gray);
+  background-color: transparent;
   font-weight: 400;
 }
 .login-page input:focus {

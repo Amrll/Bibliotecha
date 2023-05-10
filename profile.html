@@ -28,10 +28,12 @@
       <nav id="navbar">
         <div class="menu">
           <div>
-            <form>
+            <form class="search-form">
               <div class="input-wrap">
-                <input type="search" size="35" placeholder="Search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <input id="input" size="45" placeholder="Search" />
+                <a href="#search-tab" onclick="getbooks()"
+                  ><i class="fa fa-search"></i
+                ></a>
               </div>
             </form>
             <ul class="menu-icon">
@@ -47,15 +49,6 @@
               <li>
                 <a href="profile.html"><i class="fa fa-user"></i></a>
               </li>
-            </ul>
-            <ul>
-              <li><a href="#">Fiction</a></li>
-              <li><a href="#">Best Seller</a></li>
-              <li><a href="#">Novel</a></li>
-              <li><a href="#">Collections</a></li>
-              <li><a href="#">New!</a></li>
-              <li><a href="#">Sale</a></li>
-              <li><a href="#">More</a></li>
             </ul>
             <ul class="social-media">
               <li>
@@ -73,10 +66,12 @@
         <div class="container">
           <a href="index.html" class="brand">BiblioTecha<span>BOOKS</span></a>
           <div class="container-inner">
-            <form>
+            <form class="search-form">
               <div class="input-wrap">
-                <input type="search" size="45" placeholder="Search" />
-                <button type="submit"><i class="fa fa-search"></i></button>
+                <input id="input" size="45" placeholder="Search" />
+                <a href="#search-tab" onclick="getbooks()"
+                  ><i class="fa fa-search"></i
+                ></a>
               </div>
             </form>
             <ul class="page-icon">
@@ -124,8 +119,7 @@
                     fill: none;
                   }
                   .st1 {
-                    fill: #fff
-                    ;
+                    fill: #fff;
                   }
                 </style>
                 <g transform="translate(0 -952.36)">
@@ -160,8 +154,7 @@
                     fill: none;
                   }
                   .st1 {
-                    fill: #fff
-                    ;
+                    fill: #fff;
                   }
                 </style>
                 <rect class="st0" width="24" height="24" />
@@ -178,10 +171,7 @@
             </div>
           </div>
           <button type="submit" onClick="return false;">Log in</button>
-          <a
-            href="#"
-            class="discrete"
-            target="_blank"
+          <a href="#" class="discrete" target="_blank"
             >Don't have an account?</a
           >
         </form>
