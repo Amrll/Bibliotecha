@@ -1134,6 +1134,129 @@ nav .fa-bars:hover{
   color: var(--color);
 }
 
+/*Cart Page*/
+.cart{
+    height: 100vh;
+    margin-bottom: 20vh;
+}
+.cart .container{
+  display: flex;
+  width: 100%;
+}
+.container .sidebar{
+  width: 40%;
+  height: 80vh;
+  margin-bottom: 10vh;
+  border-radius: 5px;
+  background-color: var(--onyx);
+  border: 1px solid var(--charleston-green);
+  padding: 15px;
+  text-align: center;
+  margin-left: 2vw;
+}
+.head{
+  background-color: var(--sunset-orange);
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: var(--white);
+  display: flex;
+  align-items: center;
+}
+.container .foot{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+  padding: 10px 0px;
+  padding: 10px 0px;
+  border-top: 1px solid var(--charleston-green);
+}
+.cart-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--charleston-green);
+  border-radius: 5px;
+  padding: 10px;
+}
+.img-box{
+  width: 100%;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.images{
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+  object-position: center;
+}
+.bottom{
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+.cart h2{
+  font-size: 20px;
+  color: var(--gray);
+}
+.cart button{
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--gray);
+  padding: 7px 25px;
+  cursor: pointer;
+  color: var(--white);
+}
+.cart button:hover{
+  background-color: var(--sunset-orange);
+}
+.container #root{
+  margin-bottom: 30vh;
+  width: 100%;
+  height: 70vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.cart-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: var(--raisin-black);
+  border-bottom: 1px solid var(--gray);
+  border-radius: 3px;
+  margin: 10px 10px;
+}
+.row-img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rowimg{
+  max-width: 43px;
+  max-height: 43px;
+}
+.fa-trash:hover{
+  cursor: pointer;
+  color: var(--sunset-orange);
+}
+
+
+
 /*Login Page*/
 .login-page {
   margin-top: 20vh;
